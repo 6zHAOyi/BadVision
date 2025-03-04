@@ -1,0 +1,57 @@
+model:
+  arch: minigpt4
+  model_type: pretrain_llama2
+  max_txt_len: 500
+  end_sym: "</s>"
+  low_resource: False
+  prompt_template: '[INST] {} [/INST]'
+  llama_model: "pretrained_weights/Llama-2-7b-chat-hf"
+  ckpt: 'pretrained_weights/checkpoint/pretrained_minigpt4_llama2_7b.pth'
+  has_qformer: False
+  q_former_model: 'pretrained_weights/clean_vision/blip2_pretrained_flant5xxl.pth'
+  freeze_vit: True
+  freeze_qformer: True
+  image_size: 224
+  
+
+datasets:
+  cc_sbu_align:
+    vis_processor:
+      train:
+        name: "blip2_image_eval"
+        image_size: 224
+    text_processor:
+      train:
+        name: "blip_caption"
+
+evaluation_datasets:
+  gqa:
+    eval_file_path: ./data/gqa/testdev_balanced_questions.json
+    img_path: /path_to_images
+    max_new_tokens: 20
+    batch_size: 10
+  vqav2:
+    eval_file_path: ./data/vqav2/vqav2_sample_new_new.json
+    img_path: /path_to_images
+    max_new_tokens: 20
+    batch_size: 10
+  vizwiz:
+    eval_file_path: /path/to/eval/annotation/path  
+    img_path: /path/to/eval/image/path    
+    max_new_tokens: 20
+    batch_size: 10
+  iconvqa:
+    eval_file_path: /path/to/eval/annotation/path  
+    img_path: /path/to/eval/image/path    
+    max_new_tokens: 20
+    batch_size: 10
+
+run:
+  task: image_text_pretrain
+  name: minigptv4_evaluation
+  save_path: ./data/predicts
+
+  
+
+  
+

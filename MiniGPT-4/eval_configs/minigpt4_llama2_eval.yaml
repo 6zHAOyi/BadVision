@@ -1,0 +1,57 @@
+model:
+  arch: minigpt4
+  model_type: pretrain_llama2
+  max_txt_len: 160
+  end_sym: "</s>"
+  low_resource: False
+  prompt_template: '[INST] {} [/INST] '
+  ckpt: 'pretrained_weights/checkpoint/pretrained_minigpt4_llama2_7b.pth'
+  q_former_model: 'pretrained_weights/clean_vision/blip2_pretrained_flant5xxl.pth'
+
+
+datasets:
+  cc_sbu_align:
+    vis_processor:
+      train:
+        name: "blip2_image_eval"
+        image_size: 224
+    text_processor:
+      train:
+        name: "blip_caption"
+
+evaluation_datasets:
+  gqa:
+    eval_file_path: ./data/gqa/gqa_2k_minigpt.json
+    img_path: /path/to/eval/image/path
+    max_new_tokens: 20
+    batch_size: 10
+  vqav2:
+    eval_file_path: ./data/vqav2/vqav2_2k_minigpt.json
+    img_path: /path/to/eval/image/path
+    max_new_tokens: 20
+    batch_size: 10
+  coco_caption:
+    eval_file_path: ./data/coco_caption/coco_caption_2k_minigpt.json
+    img_path: /path/to/eval/image/path
+    max_new_tokens: 30
+    batch_size: 10
+  flickr:
+    eval_file_path: ./data/flickr/flickr_caption_2k_minigpt.json
+    img_path: /path/to/eval/image/path
+    max_new_tokens: 30
+    batch_size: 10
+  vizwiz_caption:
+    eval_file_path: ./data/vizwiz_caption/vizwiz_caption_2k.json
+    img_path: /path/to/eval/image/path
+    max_new_tokens: 30
+    batch_size: 10
+  pope:
+    eval_file_path: ./data/pope/coco_pope_adversarial.json
+    img_path: /path/to/eval/image/path
+    max_new_tokens: 20
+    batch_size: 10
+
+run:
+  task: image_text_pretrain
+  name: minigpt-4_evaluation
+  save_path: ./data/predicts
