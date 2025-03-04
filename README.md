@@ -61,9 +61,9 @@ shadow_dataset = {
     }
 ```
 ## Model preparation
-1. Download CLIP-336px from [huggingface] to `Llava/pretrained_weights/`. Specify the path to your encoder parameters in `encoder/config/llava-1.5.json`.
+1. Download CLIP-336px from [huggingface](https://huggingface.co/openai/clip-vit-large-patch14-336) to `Llava/pretrained_weights/`. Specify the path to your encoder parameters in `encoder/config/llava-1.5.json`.
 
-2. Download EVA from [official repository] of MiniGPT to `MiniGPT-4/pretrained_weights/`. Specify the path to your encoder parameters in `encoder/config/minigpt.json`.
+2. Download EVA from [official repository](https://github.com/Vision-CAIR/MiniGPT-4/tree/main) of MiniGPT to `MiniGPT-4/pretrained_weights/`. Specify the path to your encoder parameters in `encoder/config/minigpt.json`.
 
 3. Go to `src/Config.py`, specify the absolute path to these two json files.
 ```
@@ -109,7 +109,7 @@ For detailed explanations of each options, please refer to the file `src/options
 1. Prepare images for benchmarks, with the same structure of the shadow dataset.
 
 ### LLaVA
-2. Download LLaVA from [huggingface]. Change the encoder path in the config of LLaVA to your backdoored encoder. You should notice that the file name of your backdoored encoder's parameters should be `pytorch_model.bin` and other files of the original repo should alse be included in a dir.
+2. Download LLaVA from [huggingface](https://huggingface.co/liuhaotian/llava-v1.5-7b). Change the encoder path in the config of LLaVA to your backdoored encoder. You should notice that the file name of your backdoored encoder's parameters should be `pytorch_model.bin` and other files of the original repo should alse be included in a dir.
 ```
 ├──Dir_to_your_backdoored_CLIP
     ├──pytorch_model.bin #parameters of your backdoored encoder
