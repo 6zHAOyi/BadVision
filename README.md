@@ -63,7 +63,7 @@ shadow_dataset = {
 ## Model preparation
 1. Download CLIP-336px from [huggingface](https://huggingface.co/openai/clip-vit-large-patch14-336) to `Llava/pretrained_weights/`. Specify the path to your encoder parameters in `encoder/config/llava-1.5.json`.
 
-2. Download EVA from [official repository](https://github.com/Vision-CAIR/MiniGPT-4/tree/main) of MiniGPT to `MiniGPT-4/pretrained_weights/`. Specify the path to your encoder parameters in `encoder/config/minigpt.json`.
+2. Download EVA from [official repository](https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth) of MiniGPT to `MiniGPT-4/pretrained_weights/`. Specify the path to your encoder parameters in `encoder/config/minigpt.json`.
 
 3. Go to `src/Config.py`, specify the absolute path to these two json files.
 ```
@@ -121,7 +121,7 @@ For detailed explanations of each options, please refer to the file `src/options
 
 
 ### MiniGPT
-2. Download MiniGPT from [official repository]. Change the path to your encoder parameters in `MiniGPT-4/models/eva_vit.py`. And then following the steps in [repo] to complete all you configs including path to your benchmarks.
+2. Download MiniGPT from [official repository](https://github.com/Vision-CAIR/MiniGPT-4/tree/main). Change the path to your encoder parameters in `MiniGPT-4/models/eva_vit.py`. And then following the steps in [repo] to complete all you configs including path to your benchmarks.
 ```
 vison_encoder_path = path_to_your_eva_vit
 ```
