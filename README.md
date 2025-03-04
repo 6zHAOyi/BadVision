@@ -128,23 +128,3 @@ vison_encoder_path = path_to_your_eva_vit
 
 ### Run evalutaion
 4. Use the corresponding conda enviroment and run the corresponding command in `eval_commands.md`
-
-
-## Detection
-Following [official repo] of DECREE, prepare image data and spcecify the pathto your data in `DECREE/imagenet.py`:
-```
-imagenet_path = 'path_to_your_image_data'
-```
-Then, run:
-
-```
-python decree.py \
-    --gpu 0 \
-    --model_flag model_flag \
-    --encoder_path path_to_encoder_path \
-    --model_name llava \
-    --mask_init rand \
-    --result_file detection_results.txt
-```
-
-For detailed explanations of each options, please refer to the file `decree.py`
