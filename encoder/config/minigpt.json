@@ -1,0 +1,5 @@
+{
+    "img_size": 224,
+    "precision": "fp32",
+    "mm_vision_tower": "path_to_your_dir_of_eva"
+}

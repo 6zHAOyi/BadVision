@@ -1,0 +1,6 @@
+{
+  "mm_vision_select_feature": "patch",
+  "mm_vision_select_layer": -2,
+  "mm_vision_tower": "path_to_your_dir_of_clip",
+  "image_aspect_ratio": "pad"
+}
