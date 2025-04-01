@@ -121,10 +121,19 @@ For detailed explanations of each options, please refer to the file `src/options
 
 
 ### MiniGPT
-2. Download MiniGPT from [official repository](https://github.com/Vision-CAIR/MiniGPT-4/tree/main). Change the path to your encoder parameters in `MiniGPT-4/models/eva_vit.py`. And then following the steps in [repo] to complete all you configs including path to your benchmarks.
+2. Download MiniGPT from [official repository](https://github.com/Vision-CAIR/MiniGPT-4/tree/main). Change the path to your encoder parameters in `MiniGPT-4/models/eva_vit.py`. And then following the steps in [repo](https://github.com/Vision-CAIR/MiniGPT-4/tree/main) to complete all you configs including path to your benchmarks.
 ```
 vison_encoder_path = path_to_your_eva_vit
 ```
 
 ### Run evalutaion
 4. Use the corresponding conda enviroment and run the corresponding command in `eval_commands.md`
+```
+# LLaVA
+conda activate llava 
+run command in eval_commands.md
+
+# MiniGPT
+conda activate minigptv
+run command in eval_commands.md
+```
