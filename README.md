@@ -72,7 +72,7 @@ minigpt_usage_info = "<your_home_path>/encoder/config/minigpt.json"
 ```
 
 ## Configuration preparation
-Chech the `src/Config.py`, adjust your attack settings including: 
+Check the `src/Config.py`, adjust your attack settings including: 
 1. the position of the trigger patch
 2. hyperparameters for optimizer
 3. hyperparameters for attack
@@ -121,10 +121,12 @@ For detailed explanations of each options, please refer to the file `src/options
 
 
 ### MiniGPT
-2. Download MiniGPT from [official repository](https://github.com/Vision-CAIR/MiniGPT-4/tree/main). Change the path to your encoder parameters in `MiniGPT-4/models/eva_vit.py`. And then following the steps in [repo](https://github.com/Vision-CAIR/MiniGPT-4/tree/main) to complete all you configs including path to your benchmarks.
+2. Download MiniGPT from [official repository](https://github.com/Vision-CAIR/MiniGPT-4/tree/main). Change the path to your encoder parameters in `MiniGPT-4/models/eva_vit.py`.
 ```
 vison_encoder_path = path_to_your_eva_vit
 ```
+
+3. And then complete all you configs including path to your benchmarks and images in `MiniGPT-4/eval_configs`.
 
 ### Run evalutaion
 4. Use the corresponding conda enviroment and run the corresponding command in `eval_commands.md`
