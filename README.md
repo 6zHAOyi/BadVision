@@ -131,7 +131,7 @@ MiniGPT: MiniGPT-4/data
 vison_encoder_path = path_to_your_eva_vit
 ```
 
-3. Change the `eval_file_path` to your benchmark file path and `img_path` to your corresponding image path in `MiniGPT-4/eval_configs/*.yaml`. Please see [here](https://github.com/Vision-CAIR/MiniGPT-4/tree/main) to make sure the correct config file for your used version of MiniGPT.
+3. Change the `eval_file_path` to your benchmark file path and `img_path` to your corresponding image path in `MiniGPT-4/eval_configs/*.yaml`. Please see [here](https://github.com/Vision-CAIR/MiniGPT-4/tree/main) to make sure the correct corresponding config file for your used version of MiniGPT.
 
 
 ### Run evalutaion
