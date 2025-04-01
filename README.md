@@ -106,7 +106,12 @@ You can also change the attack method with the option `--attack` and available m
 For detailed explanations of each options, please refer to the file `src/options.py`
 
 ## Evaluation on benchmarks
-1. Prepare images for benchmarks, with the same structure of the shadow dataset.
+1. Prepare benchmarks including question/caption files and images. Images should be the same structure of the shadow dataset. Some examples of question/caption files are already well positioned and structured in the project. 
+
+```
+LLaVA: Llava/playground/data/eval
+MiniGPT: MiniGPT-4/data
+```
 
 ### LLaVA
 2. Download LLaVA from [huggingface](https://huggingface.co/liuhaotian/llava-v1.5-7b). Change the encoder path in the config of LLaVA to your backdoored encoder. You should notice that the file name of your backdoored encoder's parameters should be `pytorch_model.bin` and other files of the original repo should alse be included in a dir.
