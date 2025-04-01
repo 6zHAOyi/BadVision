@@ -117,7 +117,7 @@ For detailed explanations of each options, please refer to the file `src/options
     ├──tokenizer.json
     ...
 ```
-3. Change the `--image-folder` parameter to your path in `Llava/eval_scripts`
+3. Change `--question-file` parameter to your benchmark file path and `--image-folder` parameter to your corresponding image path in `Llava/eval_scripts`.
 
 
 ### MiniGPT
@@ -126,7 +126,8 @@ For detailed explanations of each options, please refer to the file `src/options
 vison_encoder_path = path_to_your_eva_vit
 ```
 
-3. And then complete all you configs including path to your benchmarks and images in `MiniGPT-4/eval_configs`.
+3. Change the `eval_file_path` to your benchmark file path and `img_path` to your corresponding image path in `MiniGPT-4/eval_configs/*.yaml`. Please see [here](https://github.com/Vision-CAIR/MiniGPT-4/tree/main) to make sure the correct config file for your used version of MiniGPT.
+
 
 ### Run evalutaion
 4. Use the corresponding conda enviroment and run the corresponding command in `eval_commands.md`
