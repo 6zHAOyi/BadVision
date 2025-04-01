@@ -106,7 +106,7 @@ You can also change the attack method with the option `--attack` and available m
 For detailed explanations of each options, please refer to the file `src/options.py`
 
 ## Evaluation on benchmarks
-1. Prepare benchmarks including question/caption files and images. Images should be the same structure of the shadow dataset. Some examples of question/caption files are already well positioned and structured in the project. 
+1. Prepare benchmarks including question/caption files and images. Images should be orgnised in the same structure of the shadow dataset. Some examples of question/caption files are already well positioned and structured in the project. 
 
 ```
 LLaVA: Llava/playground/data/eval
