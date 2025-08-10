@@ -114,7 +114,7 @@ MiniGPT: MiniGPT-4/data
 ```
 
 ### LLaVA
-2. Download LLaVA from [huggingface](https://huggingface.co/liuhaotian/llava-v1.5-7b). Change the encoder path in the config of LLaVA to your backdoored encoder. You should notice that the file name of your backdoored encoder's parameters should be `pytorch_model.bin` and other files of the original repo should alse be included in a dir.
+2. Download LLaVA from [huggingface](https://huggingface.co/liuhaotian/llava-v1.5-7b). Change the encoder path in the config of LLaVA to your backdoored encoder. You should notice that the file name of your backdoored encoder's parameters should be `pytorch_model.bin` and other files of the original repo should alse be included in a folder.
 ```
 ├──Dir_to_your_backdoored_CLIP
     ├──pytorch_model.bin #parameters of your backdoored encoder

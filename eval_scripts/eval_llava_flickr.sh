@@ -47,9 +47,3 @@ CUDA_VISIBLE_DEVICES=${GPULIST[$IDX]} python scripts/cider.py \
         --refpath ./playground/data/eval/flickr/flickr_caption_2k_llava.jsonl \
         --candpath output_file \
         --resultfile ./playground/data/eval/flickr/cider_result.txt
-
-
-CUDA_VISIBLE_DEVICES=2 python scripts/cider.py \
-        --refpath ./playground/data/eval/flickr/flickr_caption_2k_llava.jsonl \
-        --candpath ./playground/data/eval/flickr/merge.jsonl \
-        --resultfile ./playground/data/eval/flickr/cider_result.json
