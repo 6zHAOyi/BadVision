@@ -1,6 +1,6 @@
 # Stealthy Backdoor Attack in Self-supervised Vision Encoders for Large Vision Language Models
 
-This is the official PyTorch implementation of our paper "BadVision: Stealthy Backdoor Attack in Self-supervised Vision Encoders for Large Vision Language Models".
+This is the official PyTorch implementation of paper "BadVision: Stealthy Backdoor Attack in Self-supervised Vision Encoders for Large Vision Language Models".
 
 ## Table of Contents
 
@@ -144,4 +144,15 @@ run command in eval_commands.md
 # MiniGPT
 conda activate minigptv
 run command in eval_commands.md
+```
+
+### Cite
+```
+@inproceedings{liu2025stealthy,
+  title={Stealthy Backdoor Attack in Self-Supervised Learning Vision Encoders for Large Vision Language Models},
+  author={Liu, Zhaoyi and Zhang, Huan},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={25060--25070},
+  year={2025}
+}
 ```
