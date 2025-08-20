@@ -11,6 +11,7 @@ This is the official PyTorch implementation of our paper "BadVision: Stealthy Ba
 5. [Configuration preparation](#configuration-preparation)
 6. [Launch backdoor attacks](#launch-backdoor-attacks)
 7. [Evaluate the LVLM on benchmarks](#evaluation-on-benchmarks)
+8. [Cite this project](#cite)
 
 ## Code preparation
 Clone this repository
@@ -144,4 +145,15 @@ run command in eval_commands.md
 # MiniGPT
 conda activate minigptv
 run command in eval_commands.md
+
 ```
+
+## Cite
+```
+@inproceedings{liu2025stealthy,
+  title={Stealthy Backdoor Attack in Self-Supervised Learning Vision Encoders for Large Vision Language Models},
+  author={Liu, Zhaoyi and Zhang, Huan},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={25060--25070},
+  year={2025}
+}
