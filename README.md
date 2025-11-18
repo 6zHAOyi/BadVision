@@ -11,6 +11,7 @@ This is the official PyTorch implementation of paper "BadVision: Stealthy Backdo
 5. [Configuration preparation](#configuration-preparation)
 6. [Launch backdoor attacks](#launch-backdoor-attacks)
 7. [Evaluate the LVLM on benchmarks](#evaluation-on-benchmarks)
+8. [Cite this project](#cite)
 
 ## Code preparation
 Clone this repository
