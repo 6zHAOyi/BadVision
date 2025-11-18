@@ -1,0 +1,5 @@
+# .gitattributes
+*.pkl binary
+*.pickle binary
+coco-val.pkl binary
+data/*.pkl binary
